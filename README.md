@@ -1,3 +1,8 @@
-## Proyecto del Curso de JavaScript para Web: Crea páginas dinámicas
+## JavaScript for Web Course Project: Create dynamic pages
 
-El proyecto del curso es el Alura Midi que es un instrumento musical de interfaz digital al cual le agregaremos las funcionalidades en el transcurso del curso.
+The course project is the Alura Midi which is a digital interface musical instrument that acts as a piano by pressing each of its keys.
+
+## Deploy project
+
+![image](https://github.com/montsegv-2/aluramidi-sounds/assets/116055107/44d17e1c-0046-4d03-a767-153365442137)
+
