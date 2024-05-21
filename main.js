@@ -9,10 +9,16 @@ const listaDeTeclas = document.querySelectorAll(".tecla");
 // console.log(listaDeTeclas);
 let cont = 0;
 
-while (cont < 9) {
-  listaDeTeclas[cont].onclick = () => {
-    playSonido();
+for (let cont = 0; cont < listaDeTeclas.length; cont++) {
+  const tecla = listaDeTeclas[cont];
+  const intruments = tecla.classList[1];
+
+  const idAudio = `#sonido_${intruments}`;
+
+  tecla.onclick = () => {
+    playSonido(idAudio);
   };
+
   cont++;
   console.log("vuelta del contador: ", cont);
 }
