@@ -10,7 +10,7 @@ const listaDeTeclas = document.querySelectorAll(".tecla");
 let cont = 0;
 
 while (cont < 9) {
-  listaDeTeclas[cont].onclick = function (params) {
+  listaDeTeclas[cont].onclick = () => {
     playSonido();
   };
   cont++;
