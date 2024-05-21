@@ -2,11 +2,9 @@
 const playSonido = (id) => {
   document.querySelector(id).play();
 };
-// document.querySelector(".tecla_pom").onclick = playSonidoPom;
 
 const listaDeTeclas = document.querySelectorAll(".tecla");
 
-// console.log(listaDeTeclas);
 let cont = 0;
 
 for (let cont = 0; cont < listaDeTeclas.length; cont++) {
@@ -19,6 +17,13 @@ for (let cont = 0; cont < listaDeTeclas.length; cont++) {
     playSonido(idAudio);
   };
 
-  cont++;
-  console.log("vuelta del contador: ", cont);
+  tecla.onkeydown = (event) => {
+    if (event.code === "Space" || event.code === "Enter") {
+      tecla.classList.add("activa");
+    }
+  };
+
+  tecla.onkeyup = () => {
+    tecla.classList.remove("activa");
+  };
 }
